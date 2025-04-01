@@ -7,5 +7,5 @@
 
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
-MACOSX_DEPLOYMENT_TARGET = 10.14.6
+MACOSX_DEPLOYMENT_TARGET = 10.15.6
 IPHONEOS_DEPLOYMENT_TARGET = 15.0
