@@ -1,0 +1,12 @@
+//
+//  machine.xcconfig
+//  acme_macos
+//
+//  Created by Camilo Sasuke Thomas Borregaard Sørensen on 29/05/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+CODE_SIGN_IDENTITY[sdk=macosx*] = Apple Development
+DEVELOPMENT_TEAM = HS8735NRM5
+
