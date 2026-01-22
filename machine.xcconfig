@@ -9,5 +9,5 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 #include "./signing.xcconfig"
 MACOSX_DEPLOYMENT_TARGET = 13.3
-IPHONEOS_DEPLOYMENT_TARGET = 15.0
+IPHONEOS_DEPLOYMENT_TARGET = 16.3
 
