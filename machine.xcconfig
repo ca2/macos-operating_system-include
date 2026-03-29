@@ -10,4 +10,6 @@
 #include "./signing.xcconfig"
 MACOSX_DEPLOYMENT_TARGET = 13.3
 IPHONEOS_DEPLOYMENT_TARGET = 16.3
+DYLIB_INSTALL_NAME_BASE = @executable_path
+
 
