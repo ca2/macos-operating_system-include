@@ -11,5 +11,10 @@
 MACOSX_DEPLOYMENT_TARGET = 13.3
 IPHONEOS_DEPLOYMENT_TARGET = 16.3
 DYLIB_INSTALL_NAME_BASE = @executable_path
+FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*] = $(inherited) "$(WorkspaceDir)/../operating_system/storage-$(PLATFORM_MODIFIER)/framework"
 
-
+// Third-party iOS libraries are separated by SDK platform and architecture.
+// These conditions keep the paths out of macOS builds that also include this file.
+IOS_STORAGE_ROOT = $(WORKSPACE_DIR)/../../operating_system/storage-ios
+LIBRARY_SEARCH_PATHS[sdk=iphoneos*] = $(inherited) "$(IOS_STORAGE_ROOT)/iphoneos/$(CURRENT_ARCH)/library"
+LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*] = $(inherited) "$(IOS_STORAGE_ROOT)/iphonesimulator/$(CURRENT_ARCH)/library"
